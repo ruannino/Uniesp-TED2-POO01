@@ -1,15 +1,15 @@
-package padrões;
+package padroes;
 
 import tasks.calculadoraRemuneracao;
 
 /**Classe é referente aos profissionais que recebem remuneração com comissão sobre vendas feitas pelo funcionário.
 */
 
- public class ProfissionalComissão extends Profissional implements calculadoraRemuneracao {
+ public class ProfissionalComissao extends Profissional implements calculadoraRemuneracao {
 
     double totalVendas;
 
-    public  ProfissionalComissão(String nome, String dataNascimento, String cpf, int matricula, double totalVendas) {
+    public  ProfissionalComissao(String nome, String dataNascimento, String cpf, int matricula, double totalVendas) {
         super(nome, dataNascimento, cpf, matricula);
         this.totalVendas = totalVendas;
     }
@@ -30,7 +30,7 @@ import tasks.calculadoraRemuneracao;
 
     @Override
     public String toString() {
-        return "ProfissionalComissão{" +
+        return "ProfissionalComissao{" +
                 "nome='" + getNome() + '\'' +
                 ", dataNascimento='" + getDataNascimento() + '\'' +
                 ", cpf='" + getCpf() + '\'' +
